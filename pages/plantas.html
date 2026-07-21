@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/Urban-eden/js/plantas.js"></script>
+    <link rel="stylesheet" href="/Urban-eden/css/plantas.css" />
+    <title>Plantas</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-grid">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Voltar para a página inicial da Urban Éden"
+        >
+          <img src="/Urban-eden/assets/img/logo.real.png" alt="logo" />
+        </a>
+
+        <nav class="site-nav" id="main-menu" aria-label="Navegação principal">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="plantas.html" aria-current="page">Blog</a></li>
+            <li><a href="">Suporte</a></li>
+            <li><a href="cuidados.html">Cuidado</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a href="#" class="instagram-icon">
+            <img
+              src="/Urban-eden/assets/img/Social link 1.png"
+              alt="instagram-icon"
+            />
+          </a>
+          <a href="#" class="linkedin-icon">
+            <img
+              src="/Urban-eden/assets/img/Social link 2.png"
+              alt="linkedin-icon"
+            />
+          </a>
+          <a href="#" class="x-icon">
+            <img src="/Urban-eden/assets/img/Social link 3.png" alt="x-icon" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- page-hero e um topo interno menor que o da pagina inicial. -->
+      <section class="page-hero section-pad">
+        <div class="container narrow">
+          <p class="eyebrow">Catálogo urbano</p>
+          <h1>Plantas para cultivar dentro de casa</h1>
+          <p class="lead">
+            Filtre por luz e dificuldade para encontrar uma espécie que combine
+            com apartamento, sala, cozinha, varanda ou janela.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-pad">
+        <div class="container">
+          <!-- div.filters guarda os botoes de filtro; data-filter informa ao JavaScript qual categoria aplicar. -->
+          <div class="filters" aria-label="Filtros de plantas por ambiente">
+            <button
+              class="filter-button active"
+              type="button"
+              data-filter="todas"
+            >
+              Todas
+            </button>
+            <button class="filter-button" type="button" data-filter="pouca-luz">
+              Pouca luz
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="meia-sombra"
+            >
+              Meia-sombra
+            </button>
+            <button class="filter-button" type="button" data-filter="sol">
+              Sol direto
+            </button>
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="comestivel"
+            >
+              Comestíveis
+            </button>
+          </div>
+
+          <!-- div.plant-grid recebe os cards; cada article tem data-category para o filtro funcionar. -->
+          <div class="plant-grid" id="plant-grid">
+            <article class="plant-card" data-category="meia-sombra pouca-luz">
+              <img
+                src="/Urban-eden/assets/img/jiboia.png"
+                alt="Ilustração de jiboia em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Meia-sombra</span>
+                <h2>Jiboia</h2>
+                <p>
+                  Trepa, pendura e cresce bem perto de janelas com luz indireta.
+                  Ótima para prateleiras.
+                </p>
+                <ul>
+                  <li><strong>Rega:</strong> 1 a 2 vezes por semana.</li>
+                  <li><strong>Luz:</strong> claridade sem sol forte.</li>
+                  <li>
+                    <strong>Cuidado:</strong> evite encharcar o substrato.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="pouca-luz">
+              <img
+                src="/Urban-eden/assets/img/zamioculca.png"
+                alt="Ilustração de zamioculca em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Pouca luz</span>
+                <h2>Zamioculca</h2>
+                <p>
+                  Resistente para salas e corredores iluminados indiretamente.
+                  Boa para rotinas corridas.
+                </p>
+                <ul>
+                  <li><strong>Rega:</strong> quando a terra secar bem.</li>
+                  <li><strong>Luz:</strong> baixa a média, sem sol intenso.</li>
+                  <li>
+                    <strong>Cuidado:</strong> folhas amareladas podem indicar
+                    excesso de água.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="pouca-luz meia-sombra">
+              <img
+                src="/Urban-eden/assets/img/espada-sao-jorge.png"
+                alt="Ilustração de espada-de-são-jorge em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Resistente</span>
+                <h2>Espada-de-são-jorge</h2>
+                <p>
+                  Adapta-se a ambientes internos e pede pouca manutenção. Boa
+                  para cantos com claridade.
+                </p>
+                <ul>
+                  <li><strong>Rega:</strong> a cada 10 a 15 dias.</li>
+                  <li>
+                    <strong>Luz:</strong> pouca luz, meia-sombra ou sol suave.
+                  </li>
+                  <li><strong>Cuidado:</strong> use vaso com furos.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="sol comestivel">
+              <img
+                src="/Urban-eden/assets/img/manjericao.png"
+                alt="Ilustração de manjericão em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Comestível</span>
+                <h2>Manjericão</h2>
+                <p>
+                  Perfeito para cozinha com sol da manhã. Além de bonito, pode
+                  ir direto para receitas.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Rega:</strong> mantenha o solo levemente úmido.
+                  </li>
+                  <li><strong>Luz:</strong> 4 horas ou mais de sol.</li>
+                  <li>
+                    <strong>Cuidado:</strong> pode as flores para manter folhas
+                    novas.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="sol">
+              <img
+                src="/Urban-eden/assets/img/suculenta.png"
+                alt="Ilustração de suculenta em vaso claro"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Sol direto</span>
+                <h2>Suculentas</h2>
+                <p>
+                  Boas para parapeitos e varandas ensolaradas. Precisam de
+                  bastante luz para ficarem saudáveis.
+                </p>
+                <ul>
+                  <li><strong>Rega:</strong> pouco, somente quando secar.</li>
+                  <li><strong>Luz:</strong> sol direto por algumas horas.</li>
+                  <li>
+                    <strong>Cuidado:</strong> substrato arenoso ajuda a drenar.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="meia-sombra">
+              <img
+                src="/Urban-eden/assets/img/lirio-da-paz.png"
+                alt="Ilustração de lírio-da-paz em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Meia-sombra</span>
+                <h2>Lírio-da-paz</h2>
+                <p>
+                  Gosta de claridade, umidade moderada e ambientes internos sem
+                  sol direto forte.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Rega:</strong> 2 vezes por semana em dias quentes.
+                  </li>
+                  <li><strong>Luz:</strong> indireta e constante.</li>
+                  <li>
+                    <strong>Cuidado:</strong> folhas caídas costumam pedir água.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="meia-sombra">
+              <img
+                src="/Urban-eden/assets/img/peperomia.png"
+                alt="Ilustração de peperômia em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Compacta</span>
+                <h2>Peperômia</h2>
+                <p>
+                  Pequena, decorativa e boa para mesas ou estantes perto de
+                  janela iluminada.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Rega:</strong> moderada, sem prato cheio de água.
+                  </li>
+                  <li><strong>Luz:</strong> indireta forte.</li>
+                  <li>
+                    <strong>Cuidado:</strong> evite sol de tarde nas folhas.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="plant-card" data-category="sol comestivel">
+              <img
+                src="/Urban-eden/assets/img/alecrim.png"
+                alt="Ilustração de alecrim em vaso"
+                loading="lazy"
+              />
+              <div class="plant-card-content">
+                <span class="tag">Comestível</span>
+                <h2>Alecrim</h2>
+                <p>
+                  Funciona em varandas e janelas muito ensolaradas. Tem perfume
+                  marcante e uso culinário.
+                </p>
+                <ul>
+                  <li><strong>Rega:</strong> pouca, com solo quase seco.</li>
+                  <li><strong>Luz:</strong> sol direto e boa ventilação.</li>
+                  <li>
+                    <strong>Cuidado:</strong> não gosta de excesso de umidade.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <br>
+    <br>
+    
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a
+            class="logo footer-logo"
+            href="index.html"
+            aria-label="Página inicial da Urban Éden"
+          >
+            <img
+              src="/Urban-eden/assets/img/logo.real.png"
+              alt="Logo-UrbanEden"
+            />
+          </a>
+        </div>
+
+
+      <div class="footer-column">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="#">Usuário</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Desenvolvedores</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="footer-column">
+        <h4>Funcionalidade</h4>
+        <ul>
+          <li><a href="#">Principais recursos</a></li>
+          <li><a href="#">Encontros</a></li>
+          <li><a href="#">Integração</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-column">
+        <h4>Saiba mais</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Cliente +</a></li>
+          <li><a href="#">Patrocinador</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-column">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="#">Contatos</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Termo</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
