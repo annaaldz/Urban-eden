@@ -2,16 +2,16 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/recuperarsenha.css">
+  <link rel="stylesheet" href="../css/cadastrar.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../assets/LOGO URBAN ÉDEN.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Recuperar sua senha</title>
+  <title>Cadastre-se</title>
 </head>
 <body>
-<header class="header">
+  <header class="header">
     <div class="header-container">
       <a href="landing.html"><img class="logo" src="./assets/img/icones/Logo.png" alt="Logo"></a>
     <nav>
@@ -33,12 +33,31 @@
   <div class="pagina-conteudo">
   <div class="fundoformulário">
   <div class="card">
-  <H1>Recupere sua senha</H1>
-  <p>Use o seu nome de usuário ou e-mail e receba informações para recuperar a sua senha</p>
+  <H1>Cadastre-se</H1>
+  <p>Preencha os dados a seguir e faça a sua conta na nossa comunidade!</p>
   <form>
-    <input type="text" placeholder="Nome de usuário ou e-mail" required>
-    <button type="submit" class="botãoverde"> Recuperar minha senha</button>
-  </form>
+    
+    <p>* Campos obrigatórios</p>
+    <input type="text" placeholder="Nome completo*" required>
+    <input type="text" placeholder="Email*" required>
+    <input type="text" placeholder="Nome de usuário*" required>
+    <input type="text" placeholder="Senha*" required>
+    <input type="text" placeholder="Repita sua senha*" required>
+    <input type="text" placeholder="Telefone*" required>
+     </form>
+
+     <div class="checkbox-linha">
+  <input type="checkbox" id="privacidade" required>
+  <label for="privacidade">Ao criar minha conta, eu concordo com a nossa Política de Privacidade*</label>
+</div>
+
+<div class="checkbox-linha">
+  <input type="checkbox" id="receber">
+  <label for="receber">Eu aceito receber newsletter no meu e-mail*</label>
+</div>
+     <br>
+    <button type="submit" class="botãoverde"> Criar conta</button>
+    <button type="submit" class="botãotransparente">Já tem conta? Faça seu login!</button>
   </div>
   </div>
   </div>
@@ -53,8 +72,7 @@
 </pattern>
 </defs>
 </svg>
-</div>
-    <footer class="site-footer">
+<footer class="site-footer">
       <div class="container footer-grid">
         <div>
           <a
