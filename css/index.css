@@ -371,7 +371,7 @@
   border-radius: 10px;
 }
 
-.footer{
+.site-footer{
   background-color: rgba(255,255,255,0.6);
 }
 
@@ -383,7 +383,7 @@
   background-position: center;
 }
 
-.footer-container{
+.container-footer-grid{
   font-family: "Montserrat";
   height: 354px;
   max-width: 1440px;
