@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat";
+}
+
+.header{
+  width: 100%;
+  background-color: #FCF7F1;
+}
+
+.header-container{
+  font-family: "Inter";
+  display: flex;
+  height: 172px;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  padding: 0 64px;
+}
+
+.logo{
+  background: transparent;
+}
+
+.nav-container{
+  width: 300px;
+  display: flex;
+  gap: 32px;
+  text-decoration: none;
+}
+
+.nav-btn{
+  font-family: "Inter", sans-serif;
+  color: #DA5828;
+  font-size: 16px;
+}
+
+.social-links{
+  display: flex;
+  gap: 24px;
+}
+
+.main{
+  max-width: 1440px;
+  height: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: white;
+
+}
+
+.login-box{
+  width: 1040px;
+  height: 800px;
+  position: relative;
+  background: transparent;
+  border:  8px solid #145A3B;
+  border-radius: 18px;
+  z-index: 2;
+  overflow: clip;
+  z-index: 2;
+}
+
+.login-img{
+  position: absolute;
+  width: 1040px;
+  height: 800px;
+  background: url(../assets/img/Image.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.login-box h2{
+  background: transparent;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #145A3B;
+  padding-top: 47px;
+  margin-bottom: 9px ;
+}
+
+#subtext{
+  background: transparent;
+  font-size: 20px;
+  padding-left: 100px;
+  color: #145A3B;
+  margin-bottom: 64px;
+}
+
+.login-box form{
+  background: transparent;
+}
+
+.text-box{
+  background: transparent;
+  margin: 6px 300px;
+  width: 437px;
+  height: 50px;
+  padding: 6px;
+  color: #616161;
+  font-family: "Inter";
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.x{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+}
+
+.check-box{
+  width: 25px;
+  height: 25px;
+  margin: 6px;
+  appearance: none;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid black
+  
+}
+
+.check-box:checked{
+  border-color: #000;
+  background-color: #000;
+}
+
+.checktext{
+  font-family: "Inter";
+  font-size: 14px;
+  text-align: center;
+  padding: 2px;
+  color: #145A3B;
+  margin-right: 100px;
+  background: transparent;
+}
+
+.forget-btn{
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 14px;
+  text-align: center;
+  color: #145A3B;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  background: transparent;
+}
+
+.submit-btn{
+  border: none;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: white;
+  background: #145A3B;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+
+.login-btn{
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #000;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+}
+
+.login-btn li{
+  background: transparent;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;  
+}
+
+#login li{
+  color: white;
+  background: transparent;
+}
+
+.icon-img{
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+}
+
+.signin-container{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 55px;
+  background: transparent;
+}
+
+.signin-text{
+  background: transparent;
+  font-family: 20px;
+  font-family: "Montserrat";
+  color: #145A3B;
+  letter-spacing: -0.5%;
+}
+
+.signin-btn{
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-size: 18px;
+  background: transparent;
+  border: 2px solid #568525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  background-color: rgba(255,255,255,0.6);
+}
+
+.footer-img{
+  margin: 0 auto;
+  width: 100%;
+  background: url(../assets/img/Image.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container{
+  font-family: "Montserrat";
+  height: 354px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.6);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  margin: 0 auto;
+  background: transparent;
+}
+
+.footer-links{
+  width: 808px;
+  height: 203px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+  gap: 94px;
+}
+
+.footer-links, .footer-links li, .footer-links ul, .footer-links a, .footer-links h2{
+  background: transparent;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer a{
+  justify-self: center;
+  align-self: flex-start;
+  padding-top: 80px;
+  background: none; 
+}
+
+.footer-links li,  .footer-links a {
+  list-style: none;
+  background: transparent;
+  font-family: "Inter";
+  font-size: 16px;
+  color: #000;
+}
+
+.footer-links h2{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Inter";
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #000;
+}
