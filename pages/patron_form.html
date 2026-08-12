@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/patronForm.css" />
+  <link rel="shortcut icon" href="../assets/img/logo/LOGO URBAN ÉDEN.jpeg" type="image/x-icon">
+  <title>Urban Éden</title>
+</head>
+<body class="form-page">
+  <header class="site-header">
+      <div class="header-grid">
+        <a class="logo" href="../landing.html" aria-label="Voltar para a página inicial da Urban Éden">
+          <img src="../assets/img/logo/logo.real.png" alt="logo" />
+        </a>
+
+        <nav class="site-nav" id="main-menu" aria-label="Navegação principal">
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="plantas.html" aria-current="page">Blog</a></li>
+            <li><a href="">Suporte</a></li>
+            <li><a href="cuidados.html">Cuidado</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        
+        <div class="social-icons">
+          <a href="#" class="instagram-icon">
+            <img
+              src="../assets/img/icones/Social link 1.png"
+              alt="instagram-icon"
+            />
+          </a>
+          <a href="#" class="linkedin-icon">
+            <img
+              src="../assets/img/icones/Social link 2.png"
+              alt="linkedin-icon"
+            />
+          </a>
+          <a href="#" class="x-icon">
+            <img src="../assets/img/icones/Social link 3.png" alt="x-icon" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="patron-form-main">
+      <div class="form-card">
+        <h1 class="form-card__title">Seja um patrocinador</h1>
+        <p class="form-card__subtitle">Preencha os dados a seguir e seja um parceiro da nossa comunidade!</p>
+        <p class="form-card__required">* Campos obrigatórios</p>
+
+        <form class="patron-form">
+          <div class="form-field">
+            <label for="empresa" class="sr-only">Nome da empresa ou instituição</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa ou instituição*" required>
+          </div>
+          <div class="form-field">
+            <label for="responsavel" class="sr-only">Nome do responsável</label>
+            <input type="text" id="responsavel" name="responsavel" placeholder="Nome do responsável*" required>
+          </div>
+          <div class="form-field">
+            <label for="email" class="sr-only">Endereço de E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail*" required>
+          </div>
+          <div class="form-field">
+            <label for="telefone" class="sr-only">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone*" required>
+          </div>
+          <div class="form-field">
+            <label for="senha" class="sr-only">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha*" requiredo>
+          </div>
+          <div class="form-field">
+            <label for="confirmar-senha" class="sr-only">Repita sua senha</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita sua senha*" required minlenght="8"> 
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="aceite-privacidade" name="aceite-privacidade" required>
+            <label for="aceite-privacidade">
+              Ao criar a minha conta, eu concordo com a nossa <a href="#" class="form-checkbox__link">Política de Uso e Privacidade</a>*
+            </label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="aceite-newsletter" name="aceite-newsletter">
+            <label for="aceite-newsletter">Eu aceito receber newsletter da Urban Éden através do meu e-mail</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary btn-block">Criar conta</button>
+            <a href="login.html" class="btn-secondary btn-block">Já tem conta? Faça seu login</a>
+          </div>
+        </form>
+      </div>
+
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="logo footer-logo" href="../landing.html" aria-label="Página inicial da Urban Éden">
+            <img src="../assets/img/logo/logo.real.png" alt="Logo-UrbanEden" />
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#">Usuário</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Desenvolvedores</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Funcionalidade</h4>
+          <ul>
+            <li><a href="#">Principais recursos</a></li>
+            <li><a href="#">Encontros</a></li>
+            <li><a href="#">Integração</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Saiba mais</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cliente +</a></li>
+            <li><a href="#">Patrocinador</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Termo</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
