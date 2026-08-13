@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background: #fcf7f1;
+  border-bottom: 2.5px solid #145a3b;
+
+}
+
+.main-header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: #da5828; 
+  font-size: 25px;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.main-header nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
+nav a:hover,
+  nav a.atividades {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #b74b4b;
+  }
+
+.icones img {
+  width: 35px;
+  margin-left: 12px;
+}
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: url('../assets/img/folhas\ rabiscos.png');
+}
+
+.card-formulario {
+  width: 100%;
+  max-width: 700px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url('../assets/img/folhas1.jpeg');
+  background-size: cover;
+  border: 8px solid #145a3b;
+  border-radius: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.card-formulario h2 {
+  color: #145a3b;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.card-formulario .instrucao {
+  color: #145a3b;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.obrigatorio {
+  color: #cc0000;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='telefone'],
+input[type='senha'] {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #145a3b;
+  border-radius: 15px;
+  font-size: 25px;
+  outline: none;
+}
+
+/* Checkboxes */
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #1b4d3e;
+}
+
+.check_caixinha input {
+  margin-top: 5px;
+}
+
+/* Botões */
+.buton-criar {
+  background-color: #145a3b;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.buton-login {
+  background-color: #e6ede6;
+  color: #145a3b;
+  border: 1px solid #145a3b;
+  padding: 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.buton:hover {
+  background-color: #0f472d;
+  transform: scale(1.1);
+  box-shadow: #145a3b;
+}
+
+.buton:active {
+  transform: scale(0.97);
+}
+
+
+.main-footer {
+  background: url('../assets/img/folhas1.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 80px;
+  color: #145a3b;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.column h4 {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.column p {
+  font-size: 12px;
+  margin-bottom: 8px;
+}

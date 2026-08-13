@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seja um Patrocinador - Urban Eden</title>
+    <link rel="stylesheet" href="../css/patrocinadoresFormulario.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <img src="../assets/img/ué.jpeg" alt="Urban Eden Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#" >Blog</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="icones">
+        <img src="../assets/img/icons8-instagram-logo-50.png" alt="Instagram" />
+        <img src="../assets/img/icons8-linkedin-50.png" alt="LinkedIn" />
+        <img src="../assets/img/icons8-x-logo-48.png" alt="X" />
+      </div>
+    </header>
+
+    <main class="container-cadastro">
+      <!-- Card do Formulário -->
+      <section class="card-formulario">
+        <div class="form-content">
+          <h2>SEJA UM PATROCINADOR</h2>
+          <p class="instrucao">
+            Preencha os dados a seguir e seja parceiro da nossa comunidade!
+          </p>
+
+          <form>
+            <small class="obrigatorio">* Campos obrigatórios</small>
+
+            <input
+              type="text"
+              placeholder="Nome da empresa ou instituição*"
+              required
+            />
+            <input type="text" placeholder="Nome do Responsável*" required />
+            <input type="email" placeholder="E-mail*" required />
+            <input type="telefone" placeholder="Telefone*" required />
+            <input type="senha" placeholder="Senha*" required />
+            <input type="senha" placeholder="Repita sua senha*" required />
+
+            <div class="check_caixinha">
+              <input type="checkbox" id="privacidade" />
+              <label for="privacidade"
+                >Ao criar minha conta, eu concordo com a nossa
+                <strong>Política de Privacidade</strong></label
+              >
+            </div>
+
+            <div class="checkbox-grupo">
+              <input type="checkbox" id="newsletter" />
+              <label for="newsletter"
+                >Eu aceito receber newsletter no meu e-mail</label
+              >
+            </div>
+
+            <button type="submit" class="buton-criar">Criar conta</button>
+            <button type="button" class="buton-login">
+              Já tem conta? Faça seu login
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+  <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../assets/img/ué.jpeg" alt="UE Logo" />
+        </div>
+        <div class="footer-links">
+          <div class="column">
+            <h4>Plataforma</h4>
+            <p>Usuário</p>
+            <p>Equipe</p>
+            <p>Desenvolvedores</p>
+          </div>
+          <div class="column">
+            <h4>Funcionalidade</h4>
+            <p>Principais recursos</p>
+            <p>Encontros</p>
+            <p>Integração</p>
+          </div>
+          <div class="column">
+            <h4>Saiba mais</h4>
+            <p>Blog</p>
+            <p>Cliente +</p>
+            <p>Patrocinador</p>
+          </div>
+          <div class="column">
+            <h4>Suporte</h4>
+            <p>Contatos</p>
+            <p>Suporte</p>
+            <p>Termo</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/patrocinadores.js"></script>
+  </body>
+</html>
